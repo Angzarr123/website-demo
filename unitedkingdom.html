@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Travel Agent</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/slideshow.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+           <!-- Navigation-->
+           <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="img/Hazard_Flight.png" style="height: auto; width: 150px;" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index copy.html">Main Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead" id="masthead" style="background-image: url(https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRHnftE8ZmwVZbu0olAkh8_BBTqcYcdBigcY6G0xcROsfZe8mtrLhu8UB0k81LpIVc0nn5ejBC8Vk_yHzuEKxwhHikUjcjPxeb7SEorRw);">
+            <div class="container">
+                <div class="masthead-subheading"></div>
+                <div class="masthead-heading text-uppercase">United Kingdom</div>
+                
+            </div>
+        </header>
+        <!--
+        <button type="button" onclick="changeBackground()">Click Me!</button>
+        -->
+
+        <script>
+        function changeBackground() {
+            document.getElementById("masthead").style.backgroundImage = "url(img/netherlands.jpg)";
+        }
+        </script>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+
+
+        
+
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                </div>
+                <p>
+                    City tours focus on exploring the vibrant cities of the UK, including London, Edinburgh, Oxford, and Bath. These tours are often guided, with stops at famous landmarks, historical sites, and cultural attractions.            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Highlights</h2>
+                    <h3 class="section-subheading text-muted"> </h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" >
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+
+                                <div class="portfolio-zoom" style="transition-duration: 0.5s;">
+                                    <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQ6mM0caluvSvR4tvz2t7jMMIw2FiR_PWs0KVgLW7kwQ6Eb2IQofFcWuYmkHBl0cyD1f1YuuD0SaA4rBAWnSiyzjYbQUYNvHYNJZvCSgw"  alt="..." />
+                                </div>
+                                
+                                                                
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">London City Tour</div>
+                                <div class="portfolio-caption-subheading text-muted">
+                                    Visit iconic spots like the Tower of London, Buckingham Palace, the Houses of Parliament, and the British Museum. Many tours also include Thames River cruises or visits to the West End for theater shows.                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <div class="portfolio-zoom" style="transition-duration: 0.5s">
+                                    <img class="img-fluid" src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTM0rXbMRVXznfc99j6YLvcJ2RcDmPLeB34Fk6gu_BCt-hOXSEUQqhiZ_a69pi6k5js48JUZKU3qQITzkenYUdL2AUa1AzLEibh583ScA" alt="..." />
+                                </div>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Edinburgh City Tour</div>
+                                <div class="portfolio-caption-subheading text-muted">
+                                    Explore Edinburgh’s Old Town and Royal Mile, Edinburgh Castle, Holyrood Palace, and Arthur’s Seat for panoramic views of the city.                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <div class="portfolio-zoom" style="transition-duration: 0.5s">
+                                    <img class="img-fluid" src="https://www.tripsavvy.com/thmb/d_m5QGrHj-jqPfQ77Pupa2lFo0o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-538290541-5c6b167c46e0fb0001b35dbe.jpg" alt="..." />
+                                </div>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Oxford and Cambridge Tour </div>
+                                <div class="portfolio-caption-subheading text-muted">
+                                    Discover the historic university cities, with visits to the prestigious colleges, the Bodleian Library, and the River Cam.                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                <!--TESTING-->
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <div class="portfolio-zoom" style="transition-duration: 0.5s">
+                                    <img class="img-fluid" src="https://www.chasingthelongroad.com/wp-content/uploads/2022/01/castles-Scotland-dunrobin.webp" alt="..." />
+                                </div>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Castles of Scotland Tour</div>
+                                <div class="portfolio-caption-subheading text-muted">
+                                    Discover Scotland’s most famous castles, such as Edinburgh Castle, Stirling Castle, and Eilean Donan Castle, while learning about the country’s royal history.                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <div class="portfolio-zoom" style="transition-duration: 0.5s">
+                                    <img class="img-fluid" src="https://static.independent.co.uk/2024/11/04/15/04111550-a9d04fc3-039f-4bbd-86a9-860c0518b9a6.jpg" alt="..." />
+                                </div>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Buckingham Palace Tour</div>
+                                <div class="portfolio-caption-subheading text-muted">
+                                    Visit the iconic palace in London, including the Changing of the Guard ceremony and the State Rooms during the summer months.                        </div>
+                    
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Hazard Flight 2069</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+                <!-- Bootstrap core JS-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- Core theme JS-->
+                <script src="js/scripts.js"></script>
+                <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+                <!-- * *                               SB Forms JS                               * *-->
+                <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+                <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+                <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+                
+
+    </body>
+</html>

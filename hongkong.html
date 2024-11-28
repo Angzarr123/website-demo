@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Travel Agent</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/slideshow.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+           <!-- Navigation-->
+           <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="img/Hazard_Flight.png" style="height: auto; width: 150px;" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index copy.html">Main Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead" id="masthead" style="background-image: url(https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQXBMn6uqGT5aL_1C2c6ZOs_QxsCFt2c8sAC3dbh7Lz7K5LXn87X2F46R2DaiNkssPmo8QkGY7wKWKruNPcw1v163IaBvFC1d8ckzqLUQ);">
+            <div class="container">
+                <div class="masthead-subheading"></div>
+                <div class="masthead-heading text-uppercase">Hong Kong</div>
+                
+            </div>
+        </header>
+        <!--
+        <button type="button" onclick="changeBackground()">Click Me!</button>
+        -->
+
+        <script>
+        function changeBackground() {
+            document.getElementById("masthead").style.backgroundImage = "url(img/netherlands.jpg)";
+        }
+        </script>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+
+
+        
+
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                </div>
+                <p>
+                    These tours focus on exploring the urban side of Hong Kong, highlighting its famous landmarks, shopping districts, and cultural gems. Often guided, these tours provide a deep dive into the city’s rich history, architecture, and modern attractions.        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Highlights</h2>
+                    <h3 class="section-subheading text-muted"> </h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" >
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+
+                                <div class="portfolio-zoom" style="transition-duration: 0.5s;">
+                                    <img class="img-fluid" src="https://media.cntraveler.com/photos/5fdbcd5d770915229e50406a/4:3/w_2132,h_1599,c_limit/_DSC0557_a.jpg"  alt="..." />
+                                </div>
+                                
+                                                                
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Hong Kong Disneyland Resort</div>
+                                <div class="portfolio-caption-subheading text-muted">
+                                    A day at one of the world’s most famous theme parks, where you can enjoy attractions, shows, and parades based on Disney’s iconic characters and stories.                            
+                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <div class="portfolio-zoom" style="transition-duration: 0.5s">
+                                    <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Hong_Kong_Island_Skyline_201108.jpg" alt="..." />
+                                </div>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Hong Kong Island Tour</div>
+                                <div class="portfolio-caption-subheading text-muted">
+                                    Discover the vibrant heart of the city, visiting popular spots such as Victoria Peak (for panoramic views), Man Mo Temple, Stanley Market, and Repulse Bay. Many tours include a tram ride or ferry cruise.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <div class="portfolio-zoom" style="transition-duration: 0.5s">
+                                    <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSqzYa214Ekl1XcPgqm4TttmiBdPRLX1cIVbBkXct7ZYyN-fsvOknzliUcayUM-zXToQkqNnMA3wt3gAsXw3prQDXPXrHV97nuMBy5FEg" alt="..." />
+                                </div>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Kowloon & Tsim Sha Tsui Tour</div>
+                                <div class="portfolio-caption-subheading text-muted">
+                                    Explore Kowloon’s bustling streets, with stops at the Hong Kong Museum of History, Temple Street Night Market, and the Star Ferry for a ride across Victoria Harbour. You may also visit the Avenue of Stars for views of the skyline.
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                <!--TESTING-->
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <div class="portfolio-zoom" style="transition-duration: 0.5s">
+                                    <img class="img-fluid" src="https://lh3.googleusercontent.com/p/AF1QipOf1FtKa6vWWE0-ilTkYT_wBVQ5SH59wkoA3n3n=s1360-w1360-h1020" alt="..." />
+                                </div>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Hong Kong Heritage Tour</div>
+                                <div class="portfolio-caption-subheading text-muted">
+                                    Visit sites such as the Hong Kong Museum of History, the Wong Tai Sin Temple, the Kowloon Walled City Park, and the Tin Hau Temple, which reflect the city’s cultural evolution.                            </div>
+                        
+                        
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <div class="portfolio-zoom" style="transition-duration: 0.5s">
+                                    <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Tseung_Kwan_O_Overview_201406.jpg/375px-Tseung_Kwan_O_Overview_201406.jpg" alt="..." />
+                                </div>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Sai Kung Peninsula & Beaches Tour</div>
+                                <div class="portfolio-caption-subheading text-muted">
+                                    Explore the natural beauty of Sai Kung, with its rugged coastline, beaches, and clear waters. The area is perfect for hiking, swimming, and kayaking.
+                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Hazard Flight 2069</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+                <!-- Bootstrap core JS-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- Core theme JS-->
+                <script src="js/scripts.js"></script>
+                <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+                <!-- * *                               SB Forms JS                               * *-->
+                <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+                <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+                <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+                
+
+    </body>
+</html>
